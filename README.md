@@ -5,4 +5,5 @@
 Hello everyone, In this repository I present a UI design proposal with figma and made with html, css and js.
 I am starting in this world of web development,
 
-Link below:
+Link below GitHub Pages:
+https://adalobregon.github.io/reset-passwords/
