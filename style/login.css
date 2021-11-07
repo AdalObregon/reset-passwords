@@ -1,0 +1,148 @@
+:root {
+    --very-light-pink: #E2C2B9;
+    --Text-input-field: #BEAEE2;
+    --Hospital-green: #CDF0EA;
+    --white: #FFFFFF;
+    --black: #000000;
+    --Dark:#232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg--: 18px;
+    --ex:36px;
+    --xl:20px;
+    --background: #F9F9F9;
+}
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--background);
+
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+
+}
+.main-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-top: 200px;
+}
+.logo{
+    width: 100px;
+    justify-self: center;
+    margin-top: -180px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.label{
+    font-size: var(--xl);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input{
+    background-color: var(--Text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.primary-button{
+    background-color: var(--Hospital-green);
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    color: var(--black);
+    cursor: pointer;
+    font-size: var(--xl);
+    font-weight: bold;
+}
+.input__password{
+    margin-top: 14px;
+    margin-bottom: 30px;
+    
+}
+.footer{
+    width: 150px;
+    justify-self: center;
+    display: none;
+}
+.vector1{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+}
+.vector2{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+.form a {
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--sm);
+    margin-bottom: 52px;
+    margin-top: 20px;
+}
+.secondary-button{
+    background-color: var(--white);
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid;
+    color: #cc65a3;
+    cursor: pointer;
+    font-size: var(--ex);
+    font-weight: bold;
+    margin-top:100px;
+}
+@media (max-width: 640px) {
+    .logo{
+        display: block;
+        margin-top: -200px;
+    }
+    .main-container{
+        color: var(--black);
+        transform: scale(.9,.9);
+    }
+    .tittle{
+        font-size: 24px;
+    }
+    .primary-button{
+        font-size: 24px;
+        background: #AF0069;
+        color: var(--white);
+    }
+    .subtittle{
+        font-size: 18px;
+    }
+    .input{
+        background: rgba(238, 235, 221, 0.64);
+        border-radius: 8px;
+    }
+    .footer{
+        display: grid;
+        place-self: end;
+        width: 100%;
+    }
+    .vector1 {
+        display: none;
+    }
+    .vector2{
+        display: none;
+    }
+
+}
